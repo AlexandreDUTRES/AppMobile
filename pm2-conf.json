@@ -1,0 +1,15 @@
+[{
+    "name"       : "AppMobile",
+    "watch"      : ["bin", "routes", "i18n", "index.js", "languages", "lib"],
+    "ignore_watch" : ["static","views","node_modules"],
+    "merge_logs" : true,
+    "script"     : "bin/www",
+    "env"        : {
+      "PORT"     : "3000",
+      "DEBUG"    : "AppMobile:*"
+    },
+    "error_file" : "~/.pm2/AppMobile.out",
+    "out_file"   : "~/.pm2/AppMobile.out",
+    "pid_file"   : "~/.pm2/AppMobile.pid",
+    "exec_mode"  : "fork"
+}]

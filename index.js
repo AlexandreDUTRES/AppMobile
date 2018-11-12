@@ -1,6 +1,13 @@
-const express = require('express')
-const app = express()
-app.get('/', (req, res) => {
-  res.send('ALEX IS THE BEST!!')
-})
-app.listen(3000, () => console.log('Server running on port 3000'))
+let express = require('express');
+let logger = require('morgan');
+let helmet = require('helmet');
+/*Routes:*/
+let home = require('./routes/home');
+
+var app = express();
+app.use(helmet());
+app.use(logger('tiny'));
+//main pages
+app.use('/', home);
+
+module.exports = app;
