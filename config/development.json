@@ -1,0 +1,13 @@
+{
+    "url": "mydbinstance.cmi9gzleezyk.us-east-2.rds.amazonaws.com:3306",
+    "localip": "127.0.0.1",
+    "connections": {
+        "mysql": {
+            "host": "127.0.0.1",
+            "user": "alexxdurex",
+            "pass": "da303115",
+            "port":3306,
+            "db":"appMobile"
+        }
+    }
+}
